@@ -33,6 +33,13 @@
                     <h1>{{ message }}</h1>
                     <input v-model="message" type="text">
                 </div>
+                <div class="col-12">
+                    <label class="d-block mt-5" for="user-input">inserisc link di un'immagine</label>
+                    <input id="user-input" v-model="url" type="text">
+                </div>
+                <div class="col-12">
+                    <img v-bind:src="url">    
+                </div>
             </div>
         </div>
     </main>
